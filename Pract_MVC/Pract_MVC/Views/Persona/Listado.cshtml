@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Pract_MVC.Models.Persona>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Listado</h2>
+
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+    </tr>
+
+    @foreach(var item in Model){
+       <tr>
+           <td>@item.apellido</td>
+           <td>@item.nombre</td>
+           <td>@item.edad</td>
+       </tr>
+        
+       
+    }
+
+</table>

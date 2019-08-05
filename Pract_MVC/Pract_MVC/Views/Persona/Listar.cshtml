@@ -1,0 +1,44 @@
+﻿@using System.Data
+@using System.Data.SqlClient
+@model System.Data.DataTable
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Listar</title>
+</head>
+<body>
+    <div>
+        <table border="1">
+            <tr>
+
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Fecha</th>
+                <th>Direccion</th>
+            </tr>
+
+            @foreach (DataRow dr in Model.Rows)
+            {
+                <tr>
+                    <td>@dr["codigo"].ToString()</td>
+                    <td>@dr["nombres"].ToString()</td>
+                    <td>@dr["apellidos"].ToString()</td>
+                    <td>@dr["edad"].ToString()</td>
+                    <td>@dr["fecha"].ToString()</td>
+                    <td>@dr["direccion"].ToString()</td>
+                </tr>
+            }
+
+
+        </table>
+    </div>
+</body>
+</html>
