@@ -1,8 +1,7 @@
+create database BD_QG
+go
 use BD_QG
 go
-
-alter table Persona
-add fecha datetime
 
 create table Persona(
 codigo int identity primary key,
