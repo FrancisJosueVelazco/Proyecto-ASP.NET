@@ -29,4 +29,3 @@ C:\Users\fvelazco\Desktop\PRACT\Pract_MVC\Pract_MVC\bin\System.Web.WebPages.Depl
 C:\Users\fvelazco\Desktop\PRACT\Pract_MVC\Pract_MVC\bin\System.Web.WebPages.Razor.xml
 C:\Users\fvelazco\Desktop\PRACT\Pract_MVC\Pract_MVC\obj\Debug\Pract_MVC.dll
 C:\Users\fvelazco\Desktop\PRACT\Pract_MVC\Pract_MVC\obj\Debug\Pract_MVC.pdb
-C:\Users\fvelazco\Desktop\PRACT\Pract_MVC\Pract_MVC\obj\Debug\Pract_MVC.csprojResolveAssemblyReference.cache

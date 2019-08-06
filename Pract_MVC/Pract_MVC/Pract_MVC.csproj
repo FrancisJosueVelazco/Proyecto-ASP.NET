@@ -130,7 +130,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Connection.cs" />
+    <Compile Include="Models\PersonaCRUD.cs" />
     <Compile Include="Models\CRUD.cs" />
     <Compile Include="Models\Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -222,6 +222,8 @@
     <Content Include="Views\Persona\Listado.cshtml" />
     <Content Include="Views\Persona\Index.cshtml" />
     <Content Include="Views\Persona\Listar.cshtml" />
+    <Content Include="Views\Persona\Registrar.cshtml" />
+    <Content Include="Views\Persona\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

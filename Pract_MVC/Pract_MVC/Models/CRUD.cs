@@ -18,12 +18,13 @@ namespace Pract_MVC.Models
                 con.Open();
                 //Querys
                 SqlCommand cmd = new SqlCommand("Select * from Persona", con);
-                //
+                //Recupera y Guarda Datos
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
                 con.Close();
             }
             return dt;
         }
+
     }
 }

@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Registrar";
+}
+<title>Registrar</title>
+<h2>Registrar</h2>
+<form method="post" action="@Url.Action("RegistrarPersona")">
+
+    Ingrese Nombres: <input name="txtnombres" type="text"></input>
+    <br></br>
+    Ingrese Apellidos: <input name="txtapellidos" type="text"></input>
+    <br></br>
+    Ingrese Edad: <input name="txtedad" type="text"></input>
+    <br></br>
+    Ingrese Direccion: <input name="txtdireccion" type="text"></input>
+    <br></br>
+    Ingrese Fecha: <input name="txtfecha" type="text"></input>
+    <br></br>
+    <input type="submit" value="Registrar" name ="action"></input>
+
+
+</form>
