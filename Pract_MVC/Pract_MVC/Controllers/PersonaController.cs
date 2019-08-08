@@ -80,25 +80,33 @@ namespace Pract_MVC.Controllers
             return View("Editar",dt);
         }
 
+        [HttpPost]
         public ActionResult EditarPersona(FormCollection frm , string action)
         {
             if (action == "Editar")
             {
                 PersonaCRUD p = new PersonaCRUD();
-                int codigo = Convert.ToInt32(frm["codigo"]);
                 string nombre = frm["txtnombres"];
                 string apellido = frm["txtapellidos"];
                 int edad = Convert.ToInt32(frm["txtedad"]);
                 string direccion = frm["txtdireccion"];
                 DateTime fecha = Convert.ToDateTime(frm["txtfecha"]);
+                int codigo = Convert.ToInt32(frm["txtcodigo"]);
                 p.Editar(codigo,nombre, apellido, edad, direccion, fecha);
 
                 return RedirectToAction("Listar", "Persona");
             }
             else
             {
-                return RedirectToAction("Listar", "Persona");
+                return RedirectToAction("Editar", "Persona");
             }
+        }
+
+        public ActionResult Eliminar(int codigo)
+        {
+            PersonaCRUD p = new PersonaCRUD();
+            p.Eliminar(codigo);
+            return RedirectToAction("Listar");
         }
 
         

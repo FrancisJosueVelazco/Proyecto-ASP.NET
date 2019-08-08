@@ -15,7 +15,7 @@ namespace Pract_MVC.Models
         [Required]
         [StringLength (100,MinimumLength =3)]
         public string nombre { get; set; }
-
+        //de ahi no e cogido n
         [Required]
         [StringLength( 100, MinimumLength = 3)]
         public string apellido { get;set; }

@@ -29,7 +29,7 @@
             <td>@dr["edad"].ToString()</td>
             <td>@dr["fecha"].ToString()</td>
             <td>@dr["direccion"].ToString()</td>
-            <td> @Html.ActionLink("Editar","Editar",new {Codigo=dr["codigo"].ToString()})</td>
+            <td>@Html.ActionLink("Editar","Editar",new {Codigo=dr["codigo"].ToString()})</td>
             <td>@Html.ActionLink("Eliminar", "Eliminar", new {Codigo = dr["codigo"].ToString() })</td>
 
 

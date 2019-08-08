@@ -7,8 +7,10 @@
 }
 
 <h2>Editar</h2>
-<form method="post" action="@Url.Action("EditarPersona")">
+<form method="post" action="@Url.Action("EditarPersona","Persona")">
 
+    Codigo: <input name="txtcodigo" type="text" value="@Model.Rows[0]["codigo"]" disabled></input>
+    <br></br>
     Nombres: <input name="txtnombres" type="text" value="@Model.Rows[0]["nombres"]"></input>
     <br></br>
     Apellidos: <input name="txtapellidos" type="text" value="@Model.Rows[0]["apellidos"]"></input>
@@ -16,7 +18,7 @@
     Edad: <input name="txtedad" type="text" value="@Model.Rows[0]["edad"]"></input>
     <br></br>
     Direccion: <input name="txtdireccion" type="text" value="@Model.Rows[0]["direccion"]"></input>
-    <br></br>
+    <br></br> 
     Fecha: <input name="txtfecha" type="text" value="@Model.Rows[0]["fecha"]"></input>
     <br></br>
     <input type="submit" value="Editar" name="action"></input>

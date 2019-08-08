@@ -22,7 +22,7 @@ namespace Pract_MVC.Models
                 //Recupera y Guarda Datos
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
-                con.Close();
+                con.Close(); 
             }
             return dt;
         }
@@ -63,9 +63,13 @@ namespace Pract_MVC.Models
         {
             using (SqlConnection c = new SqlConnection(Conn))
             {
-                c.Open();
-                string query = "UPDATE Persona SET nombres=@nombres , apellidos=@apellidos , edad=@edad , fecha=@fecha , direccion=@direccion WHERE codigo=@codigo";
-                SqlCommand cmd = new SqlCommand(query, c);
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = c;
+                cmd.Connection.Open();
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "sp_Actualizar";
+
                 cmd.Parameters.AddWithValue("@codigo", codigo);
                 cmd.Parameters.AddWithValue("@nombres", nombre);
                 cmd.Parameters.AddWithValue("@apellidos", apellido);
@@ -75,8 +79,27 @@ namespace Pract_MVC.Models
                 
 
                 return cmd.ExecuteNonQuery();
+
             }
+
+           
+
             
+        }
+
+        public int Eliminar(int codigo)
+        {
+            using (SqlConnection c = new SqlConnection(Conn))
+            {
+                c.Open();
+                string query = "DELETE FROM Persona WHERE codigo=@codigo";
+                SqlCommand cmd = new SqlCommand(query, c);
+                cmd.Parameters.AddWithValue("@codigo", codigo);
+                
+
+                return cmd.ExecuteNonQuery();
+
+            }
         }
     }
 }

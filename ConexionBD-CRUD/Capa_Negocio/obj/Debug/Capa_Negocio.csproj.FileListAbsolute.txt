@@ -1,0 +1,9 @@
+C:\Users\evalencia\Desktop\ConexionBD-CRUD\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+C:\Users\evalencia\Desktop\ConexionBD-CRUD\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+C:\Users\evalencia\Desktop\ConexionBD-CRUD\Capa_Negocio\bin\Debug\Capa_Datos.dll
+C:\Users\evalencia\Desktop\ConexionBD-CRUD\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+C:\Users\evalencia\Desktop\ConexionBD-CRUD\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+C:\Users\evalencia\Desktop\ConexionBD-CRUD\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+C:\Users\evalencia\Desktop\ConexionBD-CRUD\Capa_Negocio\obj\Debug\Capa_Negocio.csprojResolveAssemblyReference.cache
+C:\Users\evalencia\Desktop\ConexionBD-CRUD\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+C:\Users\evalencia\Desktop\ConexionBD-CRUD\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
